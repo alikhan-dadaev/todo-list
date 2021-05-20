@@ -2,6 +2,7 @@
     margin: auto;
     width: 450px;
 }
+
 .header {
     font-size: 20px;
     text-align: center;
@@ -25,6 +26,7 @@
     padding: 15px 30px;
     border: none;
     margin-left: 15px;
+    border-radius: 3px;
 }
 
 .todos {}
@@ -38,12 +40,33 @@
 .favorite {
     padding: 0 15px;
 }
-.favorite span {
+.favorite button {
     font-size: 22px;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 .todo-text {
     flex: 1;
 }
-.actions span {
+
+.selected {
+    background-color: #FFF6D6;
+}
+.selected .favorite button {
+    color: #FFD231;
+}
+.actions {
+    padding-right: 15px;
+}
+.actions button {
     color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    outline: none;
+    font-size: 18px;
 }
